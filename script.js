@@ -1,13 +1,3 @@
-/*
-Exercise 1: maxOfTwoNumbers()
-
-In this exercise, create a function named maxOfTwoNumbers. 
-It should take two numbers as inputs and return the larger number. 
-If they're equal, return either one.
-
-Exercise 1 has been completed for you:
-*/
-
 const maxOfTwoNumbers = (x, y) => {
     if (x >= y) {
       return x;
@@ -89,3 +79,37 @@ function basicCalculator(a,b,string) {
         return "TRY AGAIN"
     }
 }console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
+
+function calculateGrade(mark) {
+
+  if ( mark >= 90) {
+    return 'A'
+  } else if ( mark >= 80 && mark <= 89) {
+      return 'B'
+  } else if ( mark >= 70 && mark <= 79) {
+      return 'C'
+  } else if ( mark >= 60 && mark <= 69) {
+      return 'D'
+  } else {
+    return 'F'
+  }
+}console.log('Exercise 10 Result:', calculateGrade(85));
+
+function createUsername(first,second) {
+
+  let firstThree = first.slice(0, 3)
+
+  let secondThree = second.slice(0, 3)
+
+  let all = first.length + second.length
+
+  let together = firstThree + secondThree + all
+
+  return together
+
+}console.log('Exercise 11 Result:', createUsername("Samantha", "Green"));
+
+function numArgs() {
+  
+  return arguments.length
+}console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
